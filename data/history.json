@@ -1,4 +1,13 @@
 {
-  "updated_at": null,
-  "delivered": []
+  "updated_at": "2026-08-04T23:12:11.753284+00:00",
+  "delivered": [
+    {
+      "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
+      "title": "PipeNetwork/minimax-h3-mlx",
+      "source": "Simon Willison",
+      "theme": "ai",
+      "published": "2026-08-05T04:10:09+09:00",
+      "delivered_at": "2026-08-05T08:12:09.163468+09:00"
+    }
+  ]
 }
