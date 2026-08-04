@@ -1,0 +1,78 @@
+"""配信ソースとスケジュールの定義。
+
+ソースを増減させたい場合はこのファイルだけを触れば済むようにしている。
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from zoneinfo import ZoneInfo
+
+JST = ZoneInfo("Asia/Tokyo")
+
+# 曜日（Monday=0）とテーマの対応。月水金＝生成AI、火木＝業務技術。
+THEME_BY_WEEKDAY = {
+    0: "ai",
+    1: "work",
+    2: "ai",
+    3: "work",
+    4: "ai",
+}
+
+THEME_LABEL = {
+    "ai": "生成AI",
+    "work": "業務技術",
+}
+
+# 選定対象とする記事の最大経過日数。これより古い記事は配信しない。
+MAX_AGE_DAYS = 21
+
+# 1日の経過ごとにスコアへ掛ける減衰率。新しい記事ほど選ばれやすくする。
+RECENCY_DECAY = 0.85
+
+# 直近何回分の配信を「同一ソースの連続」とみなすか。
+SOURCE_COOLDOWN = 4
+
+
+@dataclass(frozen=True)
+class Source:
+    """1つの情報源。
+
+    Attributes:
+        name: Discord に表示する名前。
+        url: RSS/Atom のURL。fetcher="anthropic" の場合はHTMLページのURL。
+        theme: "ai" または "work"。
+        weight: 選定スコアの重み。読む価値が高いソースほど大きくする。
+        fetcher: "feed"（RSS/Atom）または "anthropic"（HTMLパース）。
+    """
+
+    name: str
+    url: str
+    theme: str
+    weight: float = 1.0
+    fetcher: str = "feed"
+
+
+SOURCES: list[Source] = [
+    # --- 生成AI（月・水・金） ---
+    # Anthropic は RSS を提供していないため HTML をパースする（2026-08-05 確認）
+    Source("Anthropic News", "https://www.anthropic.com/news", "ai", 1.3, fetcher="anthropic"),
+    Source("Simon Willison", "https://simonwillison.net/atom/everything/", "ai", 1.2),
+    Source("OpenAI News", "https://openai.com/news/rss.xml", "ai", 1.1),
+    Source("Zenn 生成AI", "https://zenn.dev/topics/生成ai/feed", "ai", 1.0),
+    Source("Zenn LLM", "https://zenn.dev/topics/llm/feed", "ai", 0.9),
+    Source("Hugging Face Blog", "https://huggingface.co/blog/feed.xml", "ai", 0.8),
+    # --- 業務技術（火・木） ---
+    Source("Publickey", "https://www.publickey1.jp/atom.xml", "work", 1.2),
+    Source("Martin Fowler", "https://martinfowler.com/feed.atom", "work", 1.1),
+    Source("InfoQ Japan", "https://feed.infoq.com/jp/", "work", 1.0),
+    Source("Zenn アーキテクチャ", "https://zenn.dev/topics/architecture/feed", "work", 1.0),
+    Source("Zenn Java", "https://zenn.dev/topics/java/feed", "work", 0.9),
+    Source("Zenn PostgreSQL", "https://zenn.dev/topics/postgresql/feed", "work", 0.9),
+    Source("PostgreSQL News", "https://www.postgresql.org/news.rss", "work", 0.8),
+    Source("はてブ テクノロジー", "https://b.hatena.ne.jp/hotentry/it.rss", "work", 0.7),
+]
+
+
+def sources_for(theme: str) -> list[Source]:
+    return [s for s in SOURCES if s.theme == theme]
