@@ -57,7 +57,9 @@ SOURCES: list[Source] = [
     # --- 生成AI（月・水・金） ---
     # Anthropic は RSS を提供していないため HTML をパースする（2026-08-05 確認）
     Source("Anthropic News", "https://www.anthropic.com/news", "ai", 1.3, fetcher="anthropic"),
-    Source("Simon Willison", "https://simonwillison.net/atom/everything/", "ai", 1.2),
+    # /atom/everything/ はリンク集・引用メモを含み中身が薄い記事が混ざるため、
+    # 長文記事だけを流す /atom/entries/ を使う（2026-08-05 に everything から変更）
+    Source("Simon Willison", "https://simonwillison.net/atom/entries/", "ai", 1.2),
     Source("OpenAI News", "https://openai.com/news/rss.xml", "ai", 1.1),
     Source("Zenn 生成AI", "https://zenn.dev/topics/生成ai/feed", "ai", 1.0),
     Source("Zenn LLM", "https://zenn.dev/topics/llm/feed", "ai", 0.9),
