@@ -5,7 +5,8 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+import re
+from dataclasses import dataclass
 from zoneinfo import ZoneInfo
 
 JST = ZoneInfo("Asia/Tokyo")
@@ -32,6 +33,26 @@ RECENCY_DECAY = 0.85
 
 # 直近何回分の配信を「同一ソースの連続」とみなすか。
 SOURCE_COOLDOWN = 4
+
+# 技術的な中身を伴わないニュース（人事・寄付・助成金・提携）のタイトルパターン。
+# Anthropic News の実データ13件で検証し、意図した4件だけに一致することを確認済み。
+# カテゴリ（Product / Announcements 等）は Announcements に当たり外れが混在するため
+# 判別に使えず、タイトルで判定している。
+NOISE_PATTERNS = [
+    re.compile(p, re.IGNORECASE)
+    for p in (
+        r"\bto join\b.{0,40}\bas\b",  # 「〜として入社」
+        r"\bappoint(?:s|ed|ment)\b",
+        r"\bdonat(?:e|es|ed|ing|ion)\b",
+        r"\bresearch grants?\b|\bgrant program\b|\bapply for\b",
+        r"\bpartnership\b|\bpartners with\b",
+        r"(?:業務|資本)提携|人事異動|新役員|寄付",
+    )
+]
+
+# ノイズ判定に一致した記事へ掛ける係数。除外ではなく減点にとどめ、
+# 他に候補が無い日は配信されるようにしている。
+NOISE_PENALTY = 0.3
 
 
 @dataclass(frozen=True)

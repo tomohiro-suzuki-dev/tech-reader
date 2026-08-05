@@ -93,7 +93,7 @@ def _fetch_anthropic(source: Source) -> list[Article]:
     """Anthropic のニュース一覧をHTMLからパースする。
 
     RSSが提供されていないための代替手段。カード単位の <a> にタイトル・カテゴリ・
-    日付がテキストとして並ぶため、日付を除いた最長のテキスト片をタイトルとみなす。
+    日付がテキストとして並ぶため、日付とカテゴリを除いた残りをタイトル・概要とする。
     """
     resp = requests.get(source.url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
     resp.raise_for_status()
@@ -113,18 +113,38 @@ def _fetch_anthropic(source: Source) -> list[Article]:
         if published is None:
             continue
 
-        # 日付とカテゴリラベルを除き、DOM順で最初に現れたものをタイトルとする。
-        # タイトルの位置はカードによってカテゴリの前後に揺れるため、長さでは判定できない。
-        candidates = [p for p in parts if not _DATE_RE.search(p) and not _is_label(p)]
-        if not candidates:
+        texts, labels = _split_card(parts)
+        if not texts:
             continue
-        title = candidates[0]
-        rest = candidates[1:]
+        title = texts[0]
+        rest = texts[1:]
         summary = clean_text(max(rest, key=len)) if rest else ""
+        category = labels[0] if labels else ""
 
         seen.add(url)
-        articles.append(Article(title, url, source.name, published, summary))
+        articles.append(Article(title, url, source.name, published, summary, category))
     return articles
+
+
+def _split_card(parts: list[str]) -> tuple[list[str], list[str]]:
+    """カード内のテキスト片を (本文系, カテゴリ系) に分ける。
+
+    タイトルの出現位置はカードによってカテゴリの前後に揺れるため、長さや位置では
+    判定できない。ラベルらしきものを取り除いた残りのDOM順先頭をタイトルとして扱う。
+
+    Returns:
+        (日付・ラベルを除いたテキスト片, カテゴリ候補)
+    """
+    body = [p for p in parts if not _DATE_RE.search(p)]
+    texts = [p for p in body if not _is_label(p)]
+    labels = [p for p in body if _is_label(p) and p.lower() not in _CTA_LABELS]
+
+    if not texts:
+        # タイトルが短すぎてラベルと区別できなかった場合の保険。
+        # 既知のカテゴリ名だけを除いて拾い直し、タイトルを失わないようにする。
+        texts = [p for p in body if p.lower() not in _KNOWN_LABELS]
+        labels = [p for p in body if p.lower() in _KNOWN_LABELS and p.lower() not in _CTA_LABELS]
+    return texts, labels
 
 
 # Anthropic のカードに現れるカテゴリ表記。タイトルと区別するために除外する。
@@ -137,12 +157,16 @@ _KNOWN_LABELS = {
     "interpretability",
     "alignment",
     "company news",
+    "economic research",
     "events",
     "featured",
     "news",
     "read more",
     "learn more",
 }
+
+# ラベルとして除外はするが、カテゴリではないもの（カード内のCTA文言）。
+_CTA_LABELS = {"read more", "learn more", "featured"}
 
 
 def _is_label(text: str) -> bool:
@@ -162,6 +186,48 @@ def _extract_date(parts: list[str]) -> datetime | None:
                 continue
             return datetime(int(match.group(3)), month, int(match.group(2)), tzinfo=JST)
     return None
+
+
+# 記事ページのメタ情報にサイト共通の定型文が入るソースがある（Anthropic は13件中2件）。
+# 定型文を概要として配信しないよう、この文で始まる場合は本文へフォールバックする。
+# 「Anthropic is」だけで判定すると "Anthropic is sharing a focused call…" のような
+# 正当な概要まで捨ててしまうため、フレーズ全体で一致を見る（実データで確認済み）。
+_BOILERPLATE_PREFIXES = ("anthropic is an ai safety and research company",)
+
+# 本文フォールバック時に概要とみなす段落の最小文字数。見出しや注記を拾わないための下限。
+MIN_PARAGRAPH_LEN = 60
+
+
+def backfill_summary(article: Article) -> str:
+    """記事ページを1回だけ取得して概要を補う。取得できなければ空文字を返す。
+
+    一覧に概要が載らないソース向け。配信する1件にだけ呼ぶ前提のため、
+    増えるリクエストは1回で済む。
+    """
+    try:
+        resp = requests.get(article.url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+    except Exception as exc:  # 概要が無いだけで配信は続ける
+        logger.warning("failed to backfill summary %s: %s", article.url, exc)
+        return ""
+
+    for attrs in ({"property": "og:description"}, {"name": "description"}):
+        tag = soup.find("meta", attrs=attrs)
+        text = clean_text(tag.get("content", "") if tag else "")
+        if text and not _is_boilerplate(text):
+            return text
+
+    for paragraph in soup.find_all("p"):
+        text = clean_text(paragraph.get_text(" "))
+        if len(text) >= MIN_PARAGRAPH_LEN:
+            return text
+    return ""
+
+
+def _is_boilerplate(text: str) -> bool:
+    lowered = text.lower()
+    return any(lowered.startswith(prefix) for prefix in _BOILERPLATE_PREFIXES)
 
 
 def collect(sources: list[Source], now: datetime, max_age_days: int) -> tuple[list[tuple[Source, Article]], list[str]]:

@@ -73,9 +73,14 @@ def main(argv: list[str] | None = None) -> int:
     article = candidate.article
     logger.info("選定: [%s] %s (score=%.3f, %s)", article.source, article.title, candidate.score, article.url)
 
+    # 一覧に概要が無いソース向けの補完。配信する1件だけを対象にする。
+    if not article.summary:
+        article.summary = feeds.backfill_summary(article)
+        logger.info("概要を記事ページから補完: %s", "成功" if article.summary else "取得できず")
+
     if args.dry_run:
         print(f"\nテーマ : {THEME_LABEL[theme]}")
-        print(f"ソース : {article.source}")
+        print(f"ソース : {article.source}" + (f"（{article.category}）" if article.category else ""))
         print(f"タイトル: {article.title}")
         print(f"URL    : {article.url}")
         print(f"公開日 : {article.published:%Y-%m-%d}（{candidate.age_days}日前）")

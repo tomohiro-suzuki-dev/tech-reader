@@ -18,7 +18,11 @@ REACTION_GUIDE = "🔥 深掘りしたい　🛠 業務で試す　📚 保管"
 
 
 def post_article(webhook_url: str, article: Article, theme: str, age_days: int) -> None:
-    footer = f"{article.source}　|　{article.published:%m/%d}"
+    parts = [article.source]
+    if article.category:
+        parts.append(article.category)
+    parts.append(f"{article.published:%m/%d}")
+    footer = "　|　".join(parts)
     if age_days > 0:
         footer += f"（{age_days}日前）"
 

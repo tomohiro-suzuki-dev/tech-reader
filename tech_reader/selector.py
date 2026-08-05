@@ -5,6 +5,7 @@
   2. 新しいほど高スコア（RECENCY_DECAY で日数減衰）
   3. ソースの重み（config.Source.weight）を掛ける
   4. 直近の配信で使ったソースは減点し、同じソースの連続を避ける
+  5. 技術的な中身を伴わないニュース（人事・寄付など）は減点する
 """
 
 from __future__ import annotations
@@ -12,7 +13,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime
 
-from .config import RECENCY_DECAY, SOURCE_COOLDOWN, Source
+from .config import NOISE_PATTERNS, NOISE_PENALTY, RECENCY_DECAY, SOURCE_COOLDOWN, Source
 from .models import Article
 
 
@@ -21,6 +22,12 @@ class Candidate:
     article: Article
     score: float
     age_days: int
+    is_noise: bool = False
+
+
+def is_noise(title: str) -> bool:
+    """人事・寄付・助成金・提携など、技術的な中身を伴わない記事か判定する。"""
+    return any(pattern.search(title) for pattern in NOISE_PATTERNS)
 
 
 def select(
@@ -38,10 +45,16 @@ def select(
             continue
 
         age_days = max((now - article.published).days, 0)
-        score = source.weight * (RECENCY_DECAY**age_days) * penalties.get(source.name, 1.0)
+        noise = is_noise(article.title)
+        score = (
+            source.weight
+            * (RECENCY_DECAY**age_days)
+            * penalties.get(source.name, 1.0)
+            * (NOISE_PENALTY if noise else 1.0)
+        )
 
         if best is None or score > best.score:
-            best = Candidate(article, score, age_days)
+            best = Candidate(article, score, age_days, noise)
     return best
 
 
