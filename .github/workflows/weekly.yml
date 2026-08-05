@@ -5,7 +5,12 @@ on:
     # 土曜 8:00 JST（= 金曜 23:00 UTC）。平日5本すべてに反応する猶予を置き、
     # 執筆枠（土曜）と同じ日に Notion が最新化される。
     - cron: '0 23 * * 5'
-  workflow_dispatch: # 手動実行用
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Notion へ書き込まず、転記対象だけをログに出す'
+        type: boolean
+        default: false
 
 # data/history.json に転記済みフラグを書き戻すために必要
 permissions:
@@ -37,10 +42,11 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-        run: python -m tech_reader.weekly
+        # 定期実行では inputs が空になるため、常に本番動作になる
+        run: python -m tech_reader.weekly ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Commit history
-        # 転記が一部失敗しても、成功分のフラグは残す
+        # 転記が一部失敗しても、成功分のフラグは残す。dry-run は履歴を変更しない
         if: always()
         run: |
           if [ -n "$(git status --porcelain data/history.json)" ]; then
