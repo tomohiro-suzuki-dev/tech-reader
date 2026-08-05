@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T23:12:11.753284+00:00",
+  "updated_at": "2026-08-05T15:56:41.814701+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -7,7 +7,10 @@
       "source": "Simon Willison",
       "theme": "ai",
       "published": "2026-08-05T04:10:09+09:00",
-      "delivered_at": "2026-08-05T08:12:09.163468+09:00"
+      "delivered_at": "2026-08-05T08:12:09.163468+09:00",
+      "message_id": "1534338191752958115",
+      "notion_page_id": "3b39531c-dc80-8115-a199-df85aad14ecc",
+      "synced_at": "2026-08-06T00:56:40.709947+09:00"
     }
   ]
 }
