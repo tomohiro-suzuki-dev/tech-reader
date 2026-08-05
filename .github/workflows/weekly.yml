@@ -1,21 +1,22 @@
-name: Daily Delivery
+name: Weekly Sync
 
 on:
   schedule:
-    # 平日 5:00 JST（= 前日 20:00 UTC）。日〜木 UTC が 月〜金 JST に対応する。
-    - cron: '0 20 * * 0-4'
+    # 土曜 8:00 JST（= 金曜 23:00 UTC）。平日5本すべてに反応する猶予を置き、
+    # 執筆枠（土曜）と同じ日に Notion が最新化される。
+    - cron: '0 23 * * 5'
   workflow_dispatch: # 手動実行用
 
-# data/history.json をコミットするために書き込み権限が必要
+# data/history.json に転記済みフラグを書き戻すために必要
 permissions:
   contents: write
 
 concurrency:
-  group: tech-reader-daily
+  group: tech-reader-weekly
   cancel-in-progress: false
 
 jobs:
-  deliver:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,21 +29,25 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Deliver today's article
+      - name: Sync reactions to Notion
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          # Bot Token は絵文字の事前付与にのみ使う。未設定でも配信は成立する。
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
-        run: python -m tech_reader.main
+          DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: python -m tech_reader.weekly
 
       - name: Commit history
+        # 転記が一部失敗しても、成功分のフラグは残す
+        if: always()
         run: |
           if [ -n "$(git status --porcelain data/history.json)" ]; then
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/history.json
-            git commit -m "chore: 配信履歴を更新"
+            git commit -m "chore: Notion 転記状況を更新"
             git push
           else
             echo "履歴に変更なし"

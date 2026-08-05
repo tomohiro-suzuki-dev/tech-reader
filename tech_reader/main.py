@@ -15,8 +15,16 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import discord, feeds
-from .config import JST, MAX_AGE_DAYS, SOURCE_COOLDOWN, THEME_BY_WEEKDAY, THEME_LABEL, sources_for
+from . import bot, discord, feeds
+from .config import (
+    JST,
+    MAX_AGE_DAYS,
+    REACTIONS,
+    SOURCE_COOLDOWN,
+    THEME_BY_WEEKDAY,
+    THEME_LABEL,
+    sources_for,
+)
 from .history import History
 from .selector import select
 
@@ -87,11 +95,33 @@ def main(argv: list[str] | None = None) -> int:
         print(f"概要   : {article.summary}")
         return 0
 
-    discord.post_article(webhook_url, article, theme, candidate.age_days)
-    history.add(article.to_record(theme, now))
+    message_id = discord.post_article(webhook_url, article, theme, candidate.age_days)
+    logger.info("配信完了 (message_id=%s)", message_id or "取得できず")
+
+    _prefill_reactions(message_id)
+
+    history.add(article.to_record(theme, now, message_id))
     history.save()
-    logger.info("配信完了")
     return 0
+
+
+def _prefill_reactions(message_id: str) -> None:
+    """絵文字を事前付与して、記録の操作を1タップに減らす。
+
+    Bot Token が未設定でも配信は成立させる（その場合は手動で2タップになるだけ）。
+    ここでの失敗が配信を落とさないよう、例外は握りつぶして警告に留める。
+    """
+    token = os.environ.get("DISCORD_BOT_TOKEN", "")
+    channel_id = os.environ.get("DISCORD_CHANNEL_ID", "")
+    if not (token and channel_id and message_id):
+        logger.info("リアクションの事前付与をスキップ（Bot Token 未設定）")
+        return
+
+    try:
+        bot.add_reactions(token, channel_id, message_id, list(REACTIONS))
+        logger.info("リアクションを事前付与: %s", " ".join(REACTIONS))
+    except Exception as exc:
+        logger.warning("リアクションの事前付与に失敗（配信は成功）: %s", exc)
 
 
 if __name__ == "__main__":
