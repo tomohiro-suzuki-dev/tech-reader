@@ -2,8 +2,9 @@ name: Daily Delivery
 
 on:
   schedule:
-    # 平日 5:00 JST（= 前日 20:00 UTC）。日〜木 UTC が 月〜金 JST に対応する。
-    - cron: '0 20 * * 0-4'
+    # 平日 4:00 JST（= 前日 19:00 UTC）。日〜木 UTC が 月〜金 JST に対応する。
+    # 実測で Actions の遅延が 72 分出たため、6:20 出発までの余裕を 140 分に広げた。
+    - cron: '0 19 * * 0-4'
   workflow_dispatch: # 手動実行用
 
 # data/history.json をコミットするために書き込み権限が必要
