@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T21:12:31.953864+00:00",
+  "updated_at": "2026-08-07T00:38:53.357917+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -22,6 +22,17 @@
       "published": "2026-08-06T03:03:20+09:00",
       "delivered_at": "2026-08-06T06:12:26.334001+09:00",
       "message_id": "1534670452843221203"
+    },
+    {
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "source": "OpenAI News",
+      "category": "",
+      "summary": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna.",
+      "theme": "ai",
+      "published": "2026-08-06T19:00:00+09:00",
+      "delivered_at": "2026-08-07T09:38:48.816866+09:00",
+      "message_id": "1535084772504641557"
     }
   ]
 }
