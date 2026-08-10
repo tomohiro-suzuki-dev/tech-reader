@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T19:29:23.469477+00:00",
+  "updated_at": "2026-08-10T19:52:43.771484+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -44,6 +44,17 @@
       "published": "2026-08-09T20:59:17+09:00",
       "delivered_at": "2026-08-10T04:29:19.506394+09:00",
       "message_id": "1536094052078850079"
+    },
+    {
+      "url": "https://zenn.dev/akari1106/articles/9d2abbc63a4abb",
+      "title": "Cloudflareは16年間ずっと同じことをしている。「通り道を支配する」という設計思想",
+      "source": "Zenn アーキテクチャ",
+      "category": "",
+      "summary": "はじめに Cloudflare OSの話を3本書きました。ローカルLLMで三目並べに5ラウンドかけた奮闘記、モデル間の受け渡し設計の話、セキュリティとガバナンスの話。 https://zenn.dev/akari1106/articles/20109e62a4b8b7 https://akari-iku.github.io/blog/multi-model-handoff/ https://zenn.dev/akari1106/art…",
+      "theme": "work",
+      "published": "2026-08-10T23:43:33+09:00",
+      "delivered_at": "2026-08-11T04:52:36.388576+09:00",
+      "message_id": "1536462308270678087"
     }
   ]
 }
