@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T19:54:22.112831+00:00",
+  "updated_at": "2026-08-14T23:15:41.477561+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -76,7 +76,9 @@
       "theme": "work",
       "published": "2026-08-12T00:33:09+09:00",
       "delivered_at": "2026-08-13T04:59:07.396716+09:00",
-      "message_id": "1537188720673824861"
+      "message_id": "1537188720673824861",
+      "notion_page_id": "3bc9531c-dc80-8101-ad80-e366a8df7b4e",
+      "synced_at": "2026-08-15T08:15:39.033477+09:00"
     },
     {
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
