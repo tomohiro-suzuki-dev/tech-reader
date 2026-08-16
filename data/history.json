@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T23:15:41.477561+00:00",
+  "updated_at": "2026-08-16T19:18:14.230733+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -90,6 +90,17 @@
       "published": "2026-08-13T20:00:00+09:00",
       "delivered_at": "2026-08-14T04:54:16.911829+09:00",
       "message_id": "1537549884155240611"
+    },
+    {
+      "url": "https://zenn.dev/shinsei99/articles/gemini-api-traps",
+      "title": "Gemini API で踏んだ4つの罠（SDK提供終了・モデル404・空レスポンス・無限待ち）",
+      "source": "Zenn 生成AI",
+      "category": "",
+      "summary": "1文の指示から企画・スライド・音声・動画まで作るパイプラインを組んでいて、 Gemini API で立て続けに4つ踏みました。どれもエラーメッセージから原因が読めない タイプだったので、症状と原因を残しておきます。 罠1: SDKが提供終了していた import google.generativeai as genai # ← これはもう古い 検索して出てくる記事の多くがこの google-generativeai を使っていますが、…",
+      "theme": "ai",
+      "published": "2026-08-16T19:56:44+09:00",
+      "delivered_at": "2026-08-17T04:18:09.413190+09:00",
+      "message_id": "1538627955415318531"
     }
   ]
 }
