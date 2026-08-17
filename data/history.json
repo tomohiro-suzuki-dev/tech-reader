@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T19:18:14.230733+00:00",
+  "updated_at": "2026-08-17T19:24:00.069915+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -101,6 +101,17 @@
       "published": "2026-08-16T19:56:44+09:00",
       "delivered_at": "2026-08-17T04:18:09.413190+09:00",
       "message_id": "1538627955415318531"
+    },
+    {
+      "url": "https://zenn.dev/chronoss/articles/92758ac3b190a5",
+      "title": "Java言語について2(HelloWorld編)",
+      "source": "Zenn Java",
+      "category": "",
+      "summary": "はじめに ここでは初学者向けにJava言語でのHello World!を紹介します。 メニュー Java言語について(環境構築編) Java言語について(HelloWorld編)←ここ 本編 それでは本編に移ります。 以下に簡単なHello World!を実行するコードを用意します。 public class App { public static void main(String[] args) throws Exception {…",
+      "theme": "work",
+      "published": "2026-08-17T19:09:18+09:00",
+      "delivered_at": "2026-08-18T04:23:54.284268+09:00",
+      "message_id": "1538991794438799451"
     }
   ]
 }
