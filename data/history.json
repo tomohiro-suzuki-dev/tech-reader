@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T19:24:00.069915+00:00",
+  "updated_at": "2026-08-18T19:23:45.559143+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -112,6 +112,17 @@
       "published": "2026-08-17T19:09:18+09:00",
       "delivered_at": "2026-08-18T04:23:54.284268+09:00",
       "message_id": "1538991794438799451"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "source": "Simon Willison",
+      "category": "",
+      "summary": "Friday's big release was Qwen 3.8 27B , an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a re…",
+      "theme": "ai",
+      "published": "2026-08-17T07:00:39+09:00",
+      "delivered_at": "2026-08-19T04:23:40.204000+09:00",
+      "message_id": "1539354119444369452"
     }
   ]
 }
