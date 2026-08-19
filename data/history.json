@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T19:23:45.559143+00:00",
+  "updated_at": "2026-08-19T19:21:07.780966+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -123,6 +123,17 @@
       "published": "2026-08-17T07:00:39+09:00",
       "delivered_at": "2026-08-19T04:23:40.204000+09:00",
       "message_id": "1539354119444369452"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/dockerdocker_vmm.html",
+      "title": "Docker社、コンテナ向けの高性能な新ハイパーバイザ「Docker VMM」パブリックベータ公開",
+      "source": "Publickey",
+      "category": "",
+      "summary": "Docker社は独自開発したコンテナ向けの高性能な新ハイパーバイザ「Docker VMM」をパブリックベータとして公開しました。WindowsとmacOSに対応した最新の「Docker Desktop v4.86」で利用可能です。 Toda...",
+      "theme": "work",
+      "published": "2026-08-20T02:43:24+09:00",
+      "delivered_at": "2026-08-20T04:21:03.730482+09:00",
+      "message_id": "1539715856001536043"
     }
   ]
 }
