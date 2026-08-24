@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T19:19:06.797796+00:00",
+  "updated_at": "2026-08-24T19:25:01.123121+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -158,6 +158,17 @@
       "published": "2026-08-23T19:25:52+09:00",
       "delivered_at": "2026-08-24T04:19:03.074411+09:00",
       "message_id": "1541164896031612990"
+    },
+    {
+      "url": "https://martinfowler.com/fragments/2026-08-24.html",
+      "title": "Fragments: August 24",
+      "source": "Martin Fowler",
+      "category": "",
+      "summary": "I was listening to Ezra Klein’s interview with Helen Toner about the recent OpenAI hack of Hugging Face and the subsequent discovery that there were swarms of agents inside OpenAI doing unsanctioned activities. One of t…",
+      "theme": "work",
+      "published": "2026-08-25T00:29:00+09:00",
+      "delivered_at": "2026-08-25T04:24:52.447378+09:00",
+      "message_id": "1541528753858019360"
     }
   ]
 }
