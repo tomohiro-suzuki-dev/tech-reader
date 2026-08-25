@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T19:25:01.123121+00:00",
+  "updated_at": "2026-08-25T19:27:24.092575+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -169,6 +169,17 @@
       "published": "2026-08-25T00:29:00+09:00",
       "delivered_at": "2026-08-25T04:24:52.447378+09:00",
       "message_id": "1541528753858019360"
+    },
+    {
+      "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "title": "Funding better evaluations of AI’s impact on wellbeing",
+      "source": "Anthropic News",
+      "category": "Announcements",
+      "summary": "Anthropic is launching a $5 million grant program to fund independent research into how AI impacts users’ wellbeing.",
+      "theme": "ai",
+      "published": "2026-08-25T00:00:00+09:00",
+      "delivered_at": "2026-08-26T04:27:19.418190+09:00",
+      "message_id": "1541891756600197201"
     }
   ]
 }
