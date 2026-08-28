@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T21:36:04.170731+00:00",
+  "updated_at": "2026-08-28T02:24:31.234586+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -191,6 +191,17 @@
       "published": "2026-08-27T00:29:13+09:00",
       "delivered_at": "2026-08-27T06:35:57.496759+09:00",
       "message_id": "1542286520952823939"
+    },
+    {
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+      "source": "OpenAI News",
+      "category": "",
+      "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+      "theme": "ai",
+      "published": "2026-08-27T18:00:00+09:00",
+      "delivered_at": "2026-08-28T11:24:26.251032+09:00",
+      "message_id": "1542721499926896641"
     }
   ]
 }
