@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T02:24:31.234586+00:00",
+  "updated_at": "2026-08-29T03:59:05.713419+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -190,7 +190,9 @@
       "theme": "work",
       "published": "2026-08-27T00:29:13+09:00",
       "delivered_at": "2026-08-27T06:35:57.496759+09:00",
-      "message_id": "1542286520952823939"
+      "message_id": "1542286520952823939",
+      "notion_page_id": "3cb9531c-dc80-8128-b223-c262501a7ba3",
+      "synced_at": "2026-08-29T12:58:58.309539+09:00"
     },
     {
       "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
