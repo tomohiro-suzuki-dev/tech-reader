@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T03:59:05.713419+00:00",
+  "updated_at": "2026-08-30T21:49:31.241871+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -204,6 +204,17 @@
       "published": "2026-08-27T18:00:00+09:00",
       "delivered_at": "2026-08-28T11:24:26.251032+09:00",
       "message_id": "1542721499926896641"
+    },
+    {
+      "url": "https://zenn.dev/numarn/articles/mcp-headers-helper-401-oauth-handson",
+      "title": "「毎回合言葉を作り直す」設定を入れたら、通信8回で1回しか呼ばれなかった。作り直しが失敗しても警告は0件だった",
+      "source": "Zenn 生成AI",
+      "category": "",
+      "summary": "SNSで「Claude Code の headersHelper は、画面のない実行だと走らないまま401になる」という投稿を見かけました。401というのは「あなたが誰だか確認できません」とサーバーに突き返された合図の番号です。 headersHelper というのは、AIが外部のサーバーに繋ぎに行くときの合言葉(認証用のヘッダー)を、そのつど自分で作らせる設定です。固定の文字列を書いておくのではなく、「このコマンドを実行して、出てき…",
+      "theme": "ai",
+      "published": "2026-08-30T18:26:38+09:00",
+      "delivered_at": "2026-08-31T06:49:26.289271+09:00",
+      "message_id": "1543739457360891955"
     }
   ]
 }
