@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T21:49:31.241871+00:00",
+  "updated_at": "2026-08-31T23:05:29.385224+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -215,6 +215,17 @@
       "published": "2026-08-30T18:26:38+09:00",
       "delivered_at": "2026-08-31T06:49:26.289271+09:00",
       "message_id": "1543739457360891955"
+    },
+    {
+      "url": "https://www.infoq.com/jp/news/2026/08/meta-react-compiler-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "title": "Meta、ビルド高速化とツールチェーン統合強化のために React コンパイラを Rust へ移植",
+      "source": "InfoQ Japan",
+      "category": "",
+      "summary": "ユーザーインターフェース構築のためのMetaのオープンソースライブラリであるReactは、React CompilerのRust移植版をメインリポジトリへ統合した。この取り組みは、ビルド時間の短縮と、RustベースのJavaScriptツールチェーンとの連携強化を目的としている。 By Daniel Curtis Translated by Naoko Koshimura",
+      "theme": "work",
+      "published": "2026-08-31T18:30:00+09:00",
+      "delivered_at": "2026-09-01T08:05:22.574740+09:00",
+      "message_id": "1544120960054067333"
     }
   ]
 }
