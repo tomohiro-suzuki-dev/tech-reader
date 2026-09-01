@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T23:05:29.385224+00:00",
+  "updated_at": "2026-09-01T21:33:19.840242+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -226,6 +226,17 @@
       "published": "2026-08-31T18:30:00+09:00",
       "delivered_at": "2026-09-01T08:05:22.574740+09:00",
       "message_id": "1544120960054067333"
+    },
+    {
+      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "title": "Developing Enterprise Frontier Safeguards with our customers",
+      "source": "Anthropic News",
+      "category": "Announcements",
+      "summary": "Today we’re announcing Enterprise Frontier Safeguards (EFS), a solution that combines the privacy of zero data retention (ZDR) with state-of-the-art safeguards for detecting misuse. EFS works by storing data in cloud in…",
+      "theme": "ai",
+      "published": "2026-09-01T00:00:00+09:00",
+      "delivered_at": "2026-09-02T06:33:15.918818+09:00",
+      "message_id": "1544460163552116867"
     }
   ]
 }
