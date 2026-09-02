@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T21:33:19.840242+00:00",
+  "updated_at": "2026-09-02T21:32:24.097861+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -237,6 +237,17 @@
       "published": "2026-09-01T00:00:00+09:00",
       "delivered_at": "2026-09-02T06:33:15.918818+09:00",
       "message_id": "1544460163552116867"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/awsaws_cloud_questaws_cloud_quest_20_ai.html",
+      "title": "AWSをゲームで学べる「AWS Cloud Quest」に新バージョン「AWS Cloud Quest 2.0」登場！ AIによるバーチャル顧客と対話し、要件を聞き出して正しくソリューションに落とし込め",
+      "source": "Publickey",
+      "category": "",
+      "summary": "Amazon Web Services（AWS）は、3DオープンワールドでAWSを学べるオンラインゲーム「AWS Cloud Quest」の新バージョン「AWS Cloud Quest 2.0」の提供を開始しました。 AWS Cloud Q...",
+      "theme": "work",
+      "published": "2026-09-03T00:55:28+09:00",
+      "delivered_at": "2026-09-03T06:32:18.036614+09:00",
+      "message_id": "1544822313688629322"
     }
   ]
 }
