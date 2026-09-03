@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T21:32:24.097861+00:00",
+  "updated_at": "2026-09-03T21:32:48.301516+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -248,6 +248,17 @@
       "published": "2026-09-03T00:55:28+09:00",
       "delivered_at": "2026-09-03T06:32:18.036614+09:00",
       "message_id": "1544822313688629322"
+    },
+    {
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "source": "OpenAI News",
+      "category": "",
+      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "theme": "ai",
+      "published": "2026-09-03T22:15:00+09:00",
+      "delivered_at": "2026-09-04T06:32:43.703601+09:00",
+      "message_id": "1545184802376912898"
     }
   ]
 }
