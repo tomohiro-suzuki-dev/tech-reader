@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T21:32:48.301516+00:00",
+  "updated_at": "2026-09-05T00:32:35.930731+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -214,7 +214,9 @@
       "theme": "ai",
       "published": "2026-08-30T18:26:38+09:00",
       "delivered_at": "2026-08-31T06:49:26.289271+09:00",
-      "message_id": "1543739457360891955"
+      "message_id": "1543739457360891955",
+      "notion_page_id": "3d29531c-dc80-813d-a95e-f241b0e17f44",
+      "synced_at": "2026-09-05T09:32:32.797372+09:00"
     },
     {
       "url": "https://www.infoq.com/jp/news/2026/08/meta-react-compiler-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
