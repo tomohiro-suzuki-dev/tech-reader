@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T00:32:35.930731+00:00",
+  "updated_at": "2026-09-06T21:01:03.231307+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -261,6 +261,17 @@
       "published": "2026-09-03T22:15:00+09:00",
       "delivered_at": "2026-09-04T06:32:43.703601+09:00",
       "message_id": "1545184802376912898"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
+      "title": "The Pelican comparison grid for Astra is pretty interesting",
+      "source": "Simon Willison",
+      "category": "",
+      "summary": "I got access to GPT-6 Astra this afternoon, so naturally I used it to generate SVGs of pelicans riding bicycles - at low, medium, high, xhigh and max reasoning levels (Astra doesn't support reasoning=none). Then I rende…",
+      "theme": "ai",
+      "published": "2026-09-05T08:59:05+09:00",
+      "delivered_at": "2026-09-07T06:00:58.659085+09:00",
+      "message_id": "1546263975568613508"
     }
   ]
 }
