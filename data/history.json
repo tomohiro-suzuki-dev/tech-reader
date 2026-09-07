@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T21:01:03.231307+00:00",
+  "updated_at": "2026-09-07T21:53:00.389010+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -272,6 +272,17 @@
       "published": "2026-09-05T08:59:05+09:00",
       "delivered_at": "2026-09-07T06:00:58.659085+09:00",
       "message_id": "1546263975568613508"
+    },
+    {
+      "url": "https://zenn.dev/iroha1203/articles/9b1daac47c2411",
+      "title": "AI時代のセマンティックレイヤーとしてのAAT【日本語版】",
+      "source": "Zenn アーキテクチャ",
+      "category": "",
+      "summary": "本記事は、Hashnodeに公開したAI Reads Your Codebase. Then It Forgets Everything.の日本語版です AIがコードを読む。その理解を、どう残すか 「メール送信を共通の非同期キューに移してほしい」 依頼は一文で済む。その変更に必要な理解は、20万行を超えるコードベースのあちこちに散らばっている。 送信関数はすぐに見つかる。しかし、呼び出し元をたどると、認証コードとメールマガジンが同じ処…",
+      "theme": "work",
+      "published": "2026-09-08T00:31:20+09:00",
+      "delivered_at": "2026-09-08T06:52:53.055569+09:00",
+      "message_id": "1546639436454953124"
     }
   ]
 }
