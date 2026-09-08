@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T21:53:00.389010+00:00",
+  "updated_at": "2026-09-08T21:32:33.728460+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -283,6 +283,17 @@
       "published": "2026-09-08T00:31:20+09:00",
       "delivered_at": "2026-09-08T06:52:53.055569+09:00",
       "message_id": "1546639436454953124"
+    },
+    {
+      "url": "https://zenn.dev/genkunjc/articles/claude-code-stop-believing",
+      "title": "Claude Code で効いたのは設定ではなく、「何を信じるのをやめるか」を仕組みに落としたこと",
+      "source": "Zenn 生成AI",
+      "category": "",
+      "summary": "AIコーディングエージェントの記事を読んでいると、だいたい settings.json と CLAUDE.md とエージェント定義が出てきます。自分もそれを書きました。 ただ、しばらく毎日回してみて、その手の成果物は、もう人間が読む必要がないと思うようになりました。設定ファイルもエージェント定義もテンプレートも、AIに渡せば向こうが読んで適用します。 人間が目で追って理解する工程は、実は要らない。 そして、その価値は下がり続けます。モ…",
+      "theme": "ai",
+      "published": "2026-09-08T21:15:02+09:00",
+      "delivered_at": "2026-09-09T06:32:29.036757+09:00",
+      "message_id": "1546996680245780682"
     }
   ]
 }
