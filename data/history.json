@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T21:32:33.728460+00:00",
+  "updated_at": "2026-09-09T21:28:53.800420+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -294,6 +294,17 @@
       "published": "2026-09-08T21:15:02+09:00",
       "delivered_at": "2026-09-09T06:32:29.036757+09:00",
       "message_id": "1546996680245780682"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/awsaiawsnx_plugin_for_aws_10.html",
+      "title": "AWS、AIがフルスタックAWSアプリの基本コードを、セキュリティ、可観測性、インフラまで一気通貫で生成する「Nx Plugin for AWS 1.0」、オープンソースで公開",
+      "source": "Publickey",
+      "category": "",
+      "summary": "Amazon Web Services（AWS）は、AIがフルスタックのAWSアプリケーションに必要なアプリケーションの基本的なコードに加えて、セキュリティや可観測性などの要件も備えたインフラ構成のコードもまとめて生成してくれるツール「Nx...",
+      "theme": "work",
+      "published": "2026-09-10T00:30:50+09:00",
+      "delivered_at": "2026-09-10T06:28:47.349881+09:00",
+      "message_id": "1547358146878505062"
     }
   ]
 }
