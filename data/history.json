@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T21:28:53.800420+00:00",
+  "updated_at": "2026-09-10T21:20:59.882877+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -305,6 +305,17 @@
       "published": "2026-09-10T00:30:50+09:00",
       "delivered_at": "2026-09-10T06:28:47.349881+09:00",
       "message_id": "1547358146878505062"
+    },
+    {
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "source": "OpenAI News",
+      "category": "",
+      "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
+      "theme": "ai",
+      "published": "2026-09-11T01:00:00+09:00",
+      "delivered_at": "2026-09-11T06:20:55.949191+09:00",
+      "message_id": "1547718549940732106"
     }
   ]
 }
