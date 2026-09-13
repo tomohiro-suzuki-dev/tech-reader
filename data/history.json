@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T00:50:03.418186+00:00",
+  "updated_at": "2026-09-13T21:13:38.665051+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -316,6 +316,17 @@
       "published": "2026-09-11T01:00:00+09:00",
       "delivered_at": "2026-09-11T06:20:55.949191+09:00",
       "message_id": "1547718549940732106"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "source": "Simon Willison",
+      "category": "",
+      "summary": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at &lt;my address&gt;. Figure out 5K and 10K running routes from me that loop from my house. Use OSM data. It worked for 27 minutes a…",
+      "theme": "ai",
+      "published": "2026-09-13T08:56:42+09:00",
+      "delivered_at": "2026-09-14T06:13:33.364741+09:00",
+      "message_id": "1548803857155489833"
     }
   ]
 }
