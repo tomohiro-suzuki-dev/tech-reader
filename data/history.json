@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T21:13:38.665051+00:00",
+  "updated_at": "2026-09-14T22:14:32.403362+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -327,6 +327,17 @@
       "published": "2026-09-13T08:56:42+09:00",
       "delivered_at": "2026-09-14T06:13:33.364741+09:00",
       "message_id": "1548803857155489833"
+    },
+    {
+      "url": "https://www.infoq.com/jp/news/2026/09/foundry-model-router-regions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "title": "Foundry Model Router、対応リージョンを2地域から28地域へ拡大し、モデルプールを刷新",
+      "source": "InfoQ Japan",
+      "category": "",
+      "summary": "マイクロソフトは最近、Foundry ModelsのModel Routerを拡張し、グローバル標準デプロイメントの対応リージョンを2から28へ、データゾーンデプロイメントの対応リージョンを21へ拡大しました。また、モデルルーターが選択するモデルプールも刷新されています。今回のリリース以前は、モデルルーターは East US 2 と Sweden Central の2リージョンでのみ稼働していた。 By Steef-Jan Wigge…",
+      "theme": "work",
+      "published": "2026-09-14T17:30:00+09:00",
+      "delivered_at": "2026-09-15T07:14:25.714182+09:00",
+      "message_id": "1549181575793741967"
     }
   ]
 }
