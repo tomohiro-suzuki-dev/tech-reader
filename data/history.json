@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T22:14:32.403362+00:00",
+  "updated_at": "2026-09-15T21:53:53.032908+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -338,6 +338,17 @@
       "published": "2026-09-14T17:30:00+09:00",
       "delivered_at": "2026-09-15T07:14:25.714182+09:00",
       "message_id": "1549181575793741967"
+    },
+    {
+      "url": "https://zenn.dev/wd01/articles/3e8e58e0128cc0",
+      "title": "ARC-DEVICE-八岐大蛇ノ函 ― 顕現崩壊之理",
+      "source": "Zenn 生成AI",
+      "category": "",
+      "summary": "前回の記事です。https://zenn.dev/wd01/articles/698a98e2194ff4 Astra最大 Title/ 八岐大蛇ノ函 ― 顕現崩壊之理 World/ 封印之遺物世界 Motif/ 🐍/🐍/🐍/🐍/🐍/🐍/🐍/🐍 / 👁️ / ⛓️ / 📦 / 🌑 / 🔥 / ☠️ / 🩸 Box/ three-dimensional square Sealed Cube/ ancient dark relic / c…",
+      "theme": "ai",
+      "published": "2026-09-15T23:30:05+09:00",
+      "delivered_at": "2026-09-16T06:53:46.945850+09:00",
+      "message_id": "1549538759601819809"
     }
   ]
 }
