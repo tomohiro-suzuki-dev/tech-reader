@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T21:53:53.032908+00:00",
+  "updated_at": "2026-09-16T21:51:32.604424+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -349,6 +349,17 @@
       "published": "2026-09-15T23:30:05+09:00",
       "delivered_at": "2026-09-16T06:53:46.945850+09:00",
       "message_id": "1549538759601819809"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html",
+      "title": "Devinが仮想環境でmacOSの提供開始。Macの実機不要でDevinがコード生成、テスト、デバッグ、実行、AppStore配信前のベータ公開まで実行",
+      "source": "Publickey",
+      "category": "",
+      "summary": "コーディングAIエージェントを提供するDevinが、Devinがホストする仮想環境内でのmacOSの提供を開始しました。 Devinはこれまで仮想環境内でUbuntu LinuxおよびWindowsを提供しており、ここにmacOSが加わりま...",
+      "theme": "work",
+      "published": "2026-09-17T01:00:51+09:00",
+      "delivered_at": "2026-09-17T06:51:24.209387+09:00",
+      "message_id": "1549900558545059912"
     }
   ]
 }
