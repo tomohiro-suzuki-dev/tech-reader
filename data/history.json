@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T21:51:32.604424+00:00",
+  "updated_at": "2026-09-17T21:52:39.680185+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -360,6 +360,17 @@
       "published": "2026-09-17T01:00:51+09:00",
       "delivered_at": "2026-09-17T06:51:24.209387+09:00",
       "message_id": "1549900558545059912"
+    },
+    {
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "title": "Introducing the Life Sciences Verification Program",
+      "source": "Anthropic News",
+      "category": "Announcements",
+      "summary": "Today, we are introducing the Life Sciences Verification Program (LSVP), which gives life science professionals access to our Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-…",
+      "theme": "ai",
+      "published": "2026-09-17T00:00:00+09:00",
+      "delivered_at": "2026-09-18T06:52:34.978754+09:00",
+      "message_id": "1550263230130299014"
     }
   ]
 }
