@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T00:52:23.469323+00:00",
+  "updated_at": "2026-09-20T21:08:55.705808+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -371,6 +371,17 @@
       "published": "2026-09-17T00:00:00+09:00",
       "delivered_at": "2026-09-18T06:52:34.978754+09:00",
       "message_id": "1550263230130299014"
+    },
+    {
+      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-openai-spend-limit-tpm",
+      "title": "Azure OpenAIに支出のハードリミットは無い — pause APIなら推論は423で止まる",
+      "source": "Zenn LLM",
+      "category": "",
+      "summary": "エージェントに好きなだけ推論させていると月末の請求が怖くなる。OpenAI の API には 「上限に達したら止まる」設定があるので、Azure にもあると思って探した。無かった。 While OpenAI has an option for hard limits that prevent you from going over your budget, Azure OpenAI doesn't currently provide…",
+      "theme": "ai",
+      "published": "2026-09-21T04:10:00+09:00",
+      "delivered_at": "2026-09-21T06:08:52.835230+09:00",
+      "message_id": "1551339395414622339"
     }
   ]
 }
