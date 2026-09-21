@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T21:08:55.705808+00:00",
+  "updated_at": "2026-09-21T22:24:27.555056+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -382,6 +382,17 @@
       "published": "2026-09-21T04:10:00+09:00",
       "delivered_at": "2026-09-21T06:08:52.835230+09:00",
       "message_id": "1551339395414622339"
+    },
+    {
+      "url": "https://zenn.dev/ogiri/articles/ai-agent-token-cost-hybrid-architecture",
+      "title": "AIエージェントのトークンコストを削る役割分担──WSL2×Windows×ローカルLLM×Sakana Fuguのハイブリッド構成",
+      "source": "Zenn アーキテクチャ",
+      "category": "",
+      "summary": "はじめに：増大するトークンコストと「役割分担」の思想 自律型 AI エージェント（Codex、Claude Code、Hermes Agent、OpenCode など）を日常の執筆や開発に組み込んで作業していると、ある月ふと請求額やトークン消費量を見て青ざめることがあります。 原因を辿っていくと、その多くは共通しています。 「ノートの要約、タグ付け、分類、フォーマット変換といった、本来は軽い処理にまで、毎回最上位のクラウド・フロンティ…",
+      "theme": "work",
+      "published": "2026-09-22T00:01:04+09:00",
+      "delivered_at": "2026-09-22T07:24:21.125881+09:00",
+      "message_id": "1551720786404839485"
     }
   ]
 }
