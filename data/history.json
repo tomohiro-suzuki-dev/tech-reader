@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T22:24:27.555056+00:00",
+  "updated_at": "2026-09-22T21:45:42.023597+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -393,6 +393,17 @@
       "published": "2026-09-22T00:01:04+09:00",
       "delivered_at": "2026-09-22T07:24:21.125881+09:00",
       "message_id": "1551720786404839485"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/21/jev/",
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "source": "Simon Willison",
+      "category": "",
+      "summary": "Last week TypeSafe AI unveiled Jev , their first example of a new category of model that they are calling \"System One models\" (I'm with Maggie Appleton, I think \"decision models\" is a better name for these). Jev is an i…",
+      "theme": "ai",
+      "published": "2026-09-22T08:09:20+09:00",
+      "delivered_at": "2026-09-23T06:45:38.879567+09:00",
+      "message_id": "1552073423662874675"
     }
   ]
 }
