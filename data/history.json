@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T21:45:42.023597+00:00",
+  "updated_at": "2026-09-23T21:59:35.873431+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -404,6 +404,17 @@
       "published": "2026-09-22T08:09:20+09:00",
       "delivered_at": "2026-09-23T06:45:38.879567+09:00",
       "message_id": "1552073423662874675"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/cloudflarepython_wrokerspythonweb.html",
+      "title": "Cloudflare、Python Wrokersを正式サービスに。PythonでWebサイトの構築、データベース接続、オブジェクトストレージ操作など",
+      "source": "Publickey",
+      "category": "",
+      "summary": "Cloudflareは、同社のサーバレス実行基盤上でPythonを実行できる「Python Workers」が正式サービスになったことを発表しました。 JavaScriptによるサーバレス実行基盤のCloudflare Workers上でW...",
+      "theme": "work",
+      "published": "2026-09-24T00:26:46+09:00",
+      "delivered_at": "2026-09-24T06:59:28.575132+09:00",
+      "message_id": "1552439301625876612"
     }
   ]
 }
