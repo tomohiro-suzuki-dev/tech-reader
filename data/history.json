@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T21:49:14.338156+00:00",
+  "updated_at": "2026-09-28T23:38:33.416206+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -437,6 +437,17 @@
       "published": "2026-09-27T17:36:09+09:00",
       "delivered_at": "2026-09-28T06:49:10.191438+09:00",
       "message_id": "1553886247703805963"
+    },
+    {
+      "url": "https://www.infoq.com/jp/news/2026/09/netflix-oci-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "title": "Netflix、因果推論のためのエージェント型ワークフローをオープンソース化した",
+      "source": "InfoQ Japan",
+      "category": "",
+      "summary": "Netflixは、因果分析に伴う煩雑な作業負荷を軽減するため、観察データに基づく因果推論向けのエージェント型ワークフローをオープンソースとして公開した。このワークフローは、観察データと人間が作成した分析計画を入力として受け取り、エージェントがアクター・クリティックループを用いて因果関係を推定し、レポートを作成するとともに、次に取るべきステップを提案する。 By Anthony Alford Translated by Naoko Ko…",
+      "theme": "work",
+      "published": "2026-09-28T18:30:00+09:00",
+      "delivered_at": "2026-09-29T08:38:27.194652+09:00",
+      "message_id": "1554276149113131031"
     }
   ]
 }
