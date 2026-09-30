@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T22:48:29.238197+00:00",
+  "updated_at": "2026-09-30T22:47:34.338354+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -459,6 +459,17 @@
       "published": "2026-09-30T00:55:13+09:00",
       "delivered_at": "2026-09-30T07:48:24.299529+09:00",
       "message_id": "1554625932386635991"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/javascriptvite_10.html",
+      "title": "JavaScriptの統合ツールチェーン「Vite+ 1.0」正式リリース。ランタイム、パッケージマネージャー、ビルドツール、リンター、フォーマッターなどを統一",
+      "source": "Publickey",
+      "category": "",
+      "summary": "JavaScript用ビルドツール「Vite」（ヴィットあるいはヴィート）を開発しているVoidZeroは、Viteを含むJavaScriptの統合ツールチェーン「Vite+」がバージョン1.0に到達したことを発表しました。 Vite+ 1...",
+      "theme": "work",
+      "published": "2026-10-01T00:22:55+09:00",
+      "delivered_at": "2026-10-01T07:47:29.226159+09:00",
+      "message_id": "1554988090009985139"
     }
   ]
 }
