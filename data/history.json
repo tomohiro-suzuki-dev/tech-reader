@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T22:47:34.338354+00:00",
+  "updated_at": "2026-10-01T22:58:27.215207+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -470,6 +470,17 @@
       "published": "2026-10-01T00:22:55+09:00",
       "delivered_at": "2026-10-01T07:47:29.226159+09:00",
       "message_id": "1554988090009985139"
+    },
+    {
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "title": "Barclays scales Claude to upgrade operations and improve client experience",
+      "source": "Anthropic News",
+      "category": "Announcements",
+      "summary": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.",
+      "theme": "ai",
+      "published": "2026-10-01T00:00:00+09:00",
+      "delivered_at": "2026-10-02T07:58:20.381975+09:00",
+      "message_id": "1555353208530935931"
     }
   ]
 }
