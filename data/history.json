@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T00:33:33.667994+00:00",
+  "updated_at": "2026-10-06T22:52:05.044031+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -503,6 +503,17 @@
       "published": "2026-10-05T13:28:00+09:00",
       "delivered_at": "2026-10-06T09:33:11.990895+09:00",
       "message_id": "1556826694365610056"
+    },
+    {
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "title": "Sharing AI progress in mathematics",
+      "source": "OpenAI News",
+      "category": "",
+      "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+      "theme": "ai",
+      "published": "2026-10-06T21:00:00+09:00",
+      "delivered_at": "2026-10-07T07:52:00.072033+09:00",
+      "message_id": "1557163551821537383"
     }
   ]
 }
