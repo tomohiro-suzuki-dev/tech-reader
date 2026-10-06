@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T22:10:07.543514+00:00",
+  "updated_at": "2026-10-06T00:33:33.667994+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -492,6 +492,17 @@
       "published": "2026-10-04T21:47:40+09:00",
       "delivered_at": "2026-10-05T07:10:03.424263+09:00",
       "message_id": "1556428222575677501"
+    },
+    {
+      "url": "https://martinfowler.com/fragments/2026-10-04.html",
+      "title": "Fragments: October 4",
+      "source": "Martin Fowler",
+      "category": "",
+      "summary": "In response to my last fragments (probably the bit about us worrying if LLMs have consciousness when we when we should be wondering why they don’t have a conscience) “Metalanguage” replied : we shipped the id and forgot…",
+      "theme": "work",
+      "published": "2026-10-05T13:28:00+09:00",
+      "delivered_at": "2026-10-06T09:33:11.990895+09:00",
+      "message_id": "1556826694365610056"
     }
   ]
 }
