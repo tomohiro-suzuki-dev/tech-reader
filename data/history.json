@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T23:25:49.049062+00:00",
+  "updated_at": "2026-10-08T23:37:32.853602+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -525,6 +525,17 @@
       "published": "2026-10-08T00:59:06+09:00",
       "delivered_at": "2026-10-08T08:25:42.594844+09:00",
       "message_id": "1557534429927448607"
+    },
+    {
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "title": "2026 Usage Policy update",
+      "source": "Anthropic News",
+      "category": "Announcements",
+      "summary": "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.",
+      "theme": "ai",
+      "published": "2026-10-08T00:00:00+09:00",
+      "delivered_at": "2026-10-09T08:37:27.468997+09:00",
+      "message_id": "1557899768993161349"
     }
   ]
 }
