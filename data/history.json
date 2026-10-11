@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T02:01:06.286817+00:00",
+  "updated_at": "2026-10-11T22:39:08.231685+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -536,6 +536,17 @@
       "published": "2026-10-08T00:00:00+09:00",
       "delivered_at": "2026-10-09T08:37:27.468997+09:00",
       "message_id": "1557899768993161349"
+    },
+    {
+      "url": "https://zenn.dev/kashiwabaray/articles/0a1719bec85fa7",
+      "title": "Bedrockのreasoning.summaryを実測 — 要約のトークン計上・応答速度・Guardrailsへの影響を検証",
+      "source": "Zenn 生成AI",
+      "category": "",
+      "summary": "1. はじめに 推論モデルをチャット UI や業務アプリに組み込むと、回答が出るまでの数秒をどう埋めるか、モデルがどのようなアプローチを取ったかをどう説明するかが課題になります。推論トークンは output トークンとして計上されますが、GPT-5.x / GPT-6.x などのクローズドウェイトのモデルでは、生の推論内容は API で公開されません。会話継続用には、暗号化された推論情報が返される場合があります。 AWS（Amazon…",
+      "theme": "ai",
+      "published": "2026-10-11T21:53:37+09:00",
+      "delivered_at": "2026-10-12T07:39:02.583895+09:00",
+      "message_id": "1558972232586362971"
     }
   ]
 }
