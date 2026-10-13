@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T01:04:32.775702+00:00",
+  "updated_at": "2026-10-13T23:10:37.813224+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -558,6 +558,17 @@
       "published": "2026-10-12T17:32:00+09:00",
       "delivered_at": "2026-10-13T10:04:28.174865+09:00",
       "message_id": "1559371220623958117"
+    },
+    {
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "source": "OpenAI News",
+      "category": "",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "theme": "ai",
+      "published": "2026-10-13T21:00:00+09:00",
+      "delivered_at": "2026-10-14T08:10:33.329093+09:00",
+      "message_id": "1559704939498840136"
     }
   ]
 }
