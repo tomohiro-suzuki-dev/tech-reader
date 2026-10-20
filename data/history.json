@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T22:46:21.869854+00:00",
+  "updated_at": "2026-10-20T22:02:26.887670+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -613,6 +613,17 @@
       "published": "2026-10-19T18:31:07+09:00",
       "delivered_at": "2026-10-20T07:46:15.909745+09:00",
       "message_id": "1561873151326036119"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+      "source": "Simon Willison",
+      "category": "",
+      "summary": "My latest vibe coded game experiment is a Command &amp; Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat…",
+      "theme": "ai",
+      "published": "2026-10-21T04:34:19+09:00",
+      "delivered_at": "2026-10-21T07:02:23.186407+09:00",
+      "message_id": "1562224498218897470"
     }
   ]
 }
