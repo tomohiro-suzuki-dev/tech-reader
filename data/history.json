@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T22:03:36.538861+00:00",
+  "updated_at": "2026-10-22T23:51:56.358881+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -635,6 +635,17 @@
       "published": "2026-10-22T00:42:36+09:00",
       "delivered_at": "2026-10-22T07:03:28.174226+09:00",
       "message_id": "1562587168545837157"
+    },
+    {
+      "url": "https://openai.com/index/decisions-api",
+      "title": "Build more responsive apps with the Decisions API",
+      "source": "OpenAI News",
+      "category": "",
+      "summary": "Fast, focused, low-cost decisions for any application.",
+      "theme": "ai",
+      "published": "2026-10-23T04:00:00+09:00",
+      "delivered_at": "2026-10-23T08:51:52.166423+09:00",
+      "message_id": "1562976825800392737"
     }
   ]
 }
