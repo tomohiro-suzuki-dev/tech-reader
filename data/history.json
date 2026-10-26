@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T21:22:09.328126+00:00",
+  "updated_at": "2026-10-26T22:59:50.974057+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -657,6 +657,17 @@
       "published": "2026-10-25T20:04:13+09:00",
       "delivered_at": "2026-10-26T06:22:03.801833+09:00",
       "message_id": "1564026289696800873"
+    },
+    {
+      "url": "https://zenn.dev/zahiraifer/articles/c5112bcaca43dc",
+      "title": "The LLM Proposes, Code Decides: Live Website Edits With 14 Verbs",
+      "source": "Zenn アーキテクチャ",
+      "category": "",
+      "summary": "By Zahi Raifer There is a tempting way to build an AI editor for websites: hand the model the page, ask for the new page, and save whatever comes back. It demos well. It also means the model's worst output goes straight…",
+      "theme": "work",
+      "published": "2026-10-26T16:42:56+09:00",
+      "delivered_at": "2026-10-27T07:59:44.123228+09:00",
+      "message_id": "1564413264228519968"
     }
   ]
 }
