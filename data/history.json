@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T22:49:08.970816+00:00",
+  "updated_at": "2026-10-28T22:56:12.917081+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -679,6 +679,17 @@
       "published": "2026-10-27T18:02:18+09:00",
       "delivered_at": "2026-10-28T07:49:03.967260+09:00",
       "message_id": "1564772961238392843"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/aioracle_cloudoracle_app_composeroracle_ai_world_2026.html",
+      "title": "オラクル、社員が業務アプリをAIで自動作成、Oracle Cloud上で共有できる「Oracle App Composer」発表。Oracle AI World 2026",
+      "source": "Publickey",
+      "category": "",
+      "summary": "オラクルは、社員が業務アプリをAIで自動的に生成しOracle Cloudにデプロイして利用できる「Oracle App Composer」を、米国ラスベガスで開催中の年次イベント「Oracle AI World 2026」で発表しました。...",
+      "theme": "work",
+      "published": "2026-10-29T00:39:53+09:00",
+      "delivered_at": "2026-10-29T07:56:08.688016+09:00",
+      "message_id": "1565137133386072065"
     }
   ]
 }
