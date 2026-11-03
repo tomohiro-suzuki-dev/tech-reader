@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T22:34:19.501905+00:00",
+  "updated_at": "2026-11-03T01:26:13.291269+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -712,6 +712,17 @@
       "published": "2026-11-01T22:49:40+09:00",
       "delivered_at": "2026-11-02T07:34:15.198812+09:00",
       "message_id": "1566581171796578345"
+    },
+    {
+      "url": "https://zenn.dev/hidekimori/articles/dcd90b7e34c55f",
+      "title": "数えられるものは壊れない",
+      "source": "Zenn アーキテクチャ",
+      "category": "",
+      "summary": "あるスキーマのバグ、何の役にも立たなかったリトライ、そして私が守り続けている小さな設計ルール。 エラー ある日、私のドキュメント処理API上の構造化データ抽出サービスである「StructFlow」のジョブが、これまで見たこともないエラーで失敗しました。 Schemas contains too many parameters with union types (27 parameters with type arrays or any…",
+      "theme": "work",
+      "published": "2026-11-03T09:00:07+09:00",
+      "delivered_at": "2026-11-03T10:26:05.863887+09:00",
+      "message_id": "1566986815267938427"
     }
   ]
 }
