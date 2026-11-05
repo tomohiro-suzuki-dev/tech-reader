@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T23:50:44.939923+00:00",
+  "updated_at": "2026-11-05T00:04:39.363912+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -734,6 +734,17 @@
       "published": "2026-11-04T01:29:48+09:00",
       "delivered_at": "2026-11-04T08:50:41.166723+09:00",
       "message_id": "1567325180814950464"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/aws26google_cloud1620263synergy_research.html",
+      "title": "クラウドインフラのシェア、AWSが26％に後退、Google Cloudは16％に上昇。クラウドインフラ市場全体は過去最大の高成長率へ。2026年第3四半期、Synergy Research",
+      "source": "Publickey",
+      "category": "",
+      "summary": "調査会社のSynergy Research Groupは、グローバルにおける2026年第3四半期のクラウドインフラの市場状況について調査結果を発表しました。 クラウドインフラとは、IaaS、PaaS、ホステッドプライベートクラウドを合わせた...",
+      "theme": "work",
+      "published": "2026-11-05T00:23:21+09:00",
+      "delivered_at": "2026-11-05T09:04:32.024707+09:00",
+      "message_id": "1567691063869702177"
     }
   ]
 }
