@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T22:37:58.059215+00:00",
+  "updated_at": "2026-11-10T01:50:41.115734+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -767,6 +767,17 @@
       "published": "2026-11-08T22:01:46+09:00",
       "delivered_at": "2026-11-09T07:37:54.444324+09:00",
       "message_id": "1569118804796248125"
+    },
+    {
+      "url": "https://zenn.dev/tappers/articles/ai-labo-e07-code-mode-workflows",
+      "title": "AIエージェントの途中放棄（Goal Drift）を防ぐ！「チャット内反復」vs「動的スクリプト生成（Code-Mode）」実機比較",
+      "source": "Zenn アーキテクチャ",
+      "category": "",
+      "summary": "! 本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E07） です。 👉 全実験の比較ランキング＆黄金パターン総集編はこちら [!IMPORTANT] 検証結論（Executive…",
+      "theme": "work",
+      "published": "2026-11-09T19:10:24+09:00",
+      "delivered_at": "2026-11-10T10:50:35.636152+09:00",
+      "message_id": "1569529690698424501"
     }
   ]
 }
