@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T01:50:41.115734+00:00",
+  "updated_at": "2026-11-10T23:52:36.970393+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -778,6 +778,17 @@
       "published": "2026-11-09T19:10:24+09:00",
       "delivered_at": "2026-11-10T10:50:35.636152+09:00",
       "message_id": "1569529690698424501"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+      "title": "Locating the source of a mysterious beep with Claude",
+      "source": "Simon Willison",
+      "category": "",
+      "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in t…",
+      "theme": "ai",
+      "published": "2026-11-10T08:57:21+09:00",
+      "delivered_at": "2026-11-11T08:52:34.053039+09:00",
+      "message_id": "1569862370744864799"
     }
   ]
 }
