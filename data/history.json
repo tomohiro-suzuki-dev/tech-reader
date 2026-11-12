@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T01:15:06.675139+00:00",
+  "updated_at": "2026-11-12T23:56:54.661326+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -800,6 +800,17 @@
       "published": "2026-11-12T00:07:35+09:00",
       "delivered_at": "2026-11-12T10:15:01.268549+09:00",
       "message_id": "1570245509711663115"
+    },
+    {
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "source": "OpenAI News",
+      "category": "",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+      "theme": "ai",
+      "published": "2026-11-13T05:00:00+09:00",
+      "delivered_at": "2026-11-13T08:56:50.366108+09:00",
+      "message_id": "1570588219374837811"
     }
   ]
 }
