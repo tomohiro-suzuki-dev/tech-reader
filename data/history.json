@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T23:52:36.970393+00:00",
+  "updated_at": "2026-11-12T01:15:06.675139+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -789,6 +789,17 @@
       "published": "2026-11-10T08:57:21+09:00",
       "delivered_at": "2026-11-11T08:52:34.053039+09:00",
       "message_id": "1569862370744864799"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/playwrightbun.html",
+      "title": "テストフレームワーク「Playwright」がBunを正式サポート。テストランナーの実行を可能に",
+      "source": "Publickey",
+      "category": "",
+      "summary": "Webアプリケーションのテストフレームワーク「Playwright」が、最新バージョンのv1.65.0で、Bunでのテストランナー実行を正式にサポートしました。 PlaywrightのテストランナーはこれまでNode.jsが用いられていまし...",
+      "theme": "work",
+      "published": "2026-11-12T00:07:35+09:00",
+      "delivered_at": "2026-11-12T10:15:01.268549+09:00",
+      "message_id": "1570245509711663115"
     }
   ]
 }
