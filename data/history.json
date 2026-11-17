@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T23:18:12.059948+00:00",
+  "updated_at": "2026-11-17T02:15:35.191876+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -822,6 +822,17 @@
       "published": "2026-11-16T00:27:19+09:00",
       "delivered_at": "2026-11-16T08:18:06.984001+09:00",
       "message_id": "1571665639368687639"
+    },
+    {
+      "url": "https://zenn.dev/shige7000/articles/b92bbe47a91157",
+      "title": "Unity 6.6からUnity 7を見据えた小規模ゲーム設計：交換可能な境界を作る",
+      "source": "Zenn アーキテクチャ",
+      "category": "",
+      "summary": "Unityのバージョン更新に強いゲームを作るには、将来のAPIを予想するより、変更されやすい部分を境界の外へ追い出すほうが効果的です。 この記事では、個人・小規模開発で無理なく導入できる境界設計を整理します。 依存の向きを一方向にする ゲームルールはUnity APIを知らず、Unity側がゲームルールを利用する形にします。 CoreからUnityEngine、TMP、Addressablesなどを参照しないことがポイントです。 交換…",
+      "theme": "work",
+      "published": "2026-11-17T11:02:49+09:00",
+      "delivered_at": "2026-11-17T11:15:26.084807+09:00",
+      "message_id": "1572072667933184104"
     }
   ]
 }
