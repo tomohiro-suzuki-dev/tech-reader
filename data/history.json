@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T01:28:08.348145+00:00",
+  "updated_at": "2026-11-19T00:56:29.936032+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -844,6 +844,17 @@
       "published": "2026-11-18T01:48:33+09:00",
       "delivered_at": "2026-11-18T10:28:04.394435+09:00",
       "message_id": "1572423120613154888"
+    },
+    {
+      "url": "https://www.publickey1.jp/blog/26/aiaimicrosoft_perception.html",
+      "title": "マイクロソフト、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始",
+      "source": "Publickey",
+      "category": "",
+      "summary": "マイクロソフトは日本時間11月18日未明に開幕した年次イベント「Microsoft Ignite 2026」で、AIによるサイバー攻撃に対抗するためのAIエージェントによる新サービス「Microsoft Perception」の提供開始を発...",
+      "theme": "work",
+      "published": "2026-11-19T01:00:37+09:00",
+      "delivered_at": "2026-11-19T09:56:22.448500+09:00",
+      "message_id": "1572777539712188429"
     }
   ]
 }
