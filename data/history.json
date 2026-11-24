@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T23:58:01.439106+00:00",
+  "updated_at": "2026-11-24T04:09:57.401789+00:00",
   "delivered": [
     {
       "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/#atom-everything",
@@ -877,6 +877,17 @@
       "published": "2026-11-23T00:26:05+09:00",
       "delivered_at": "2026-11-23T08:57:56.469996+09:00",
       "message_id": "1574212377124012155"
+    },
+    {
+      "url": "https://zenn.dev/fujishu/articles/24f0b5fa597ef8",
+      "title": "Reactの高階コンポーネント（HOC）とライブラリ設計",
+      "source": "Zenn アーキテクチャ",
+      "category": "",
+      "summary": "似た用語で、HOFといえば高階関数です。 高階コンポーネント（HOC）とは、それをコンポーネントに適用したものです。 この記事では、高階コンポーネントについて軽く触れてから、個人開発での実例を紹介します。 高階関数（HOF） 関数を引数にとるか、関数を返すかの少なくとも一方を満たすと高階関数です。 // 関数を引数にとる const callFunctionWithLog = (fn) =&gt; { console.log(&quo…",
+      "theme": "work",
+      "published": "2026-11-24T01:40:21+09:00",
+      "delivered_at": "2026-11-24T13:09:50.872872+09:00",
+      "message_id": "1574638164721672313"
     }
   ]
 }
